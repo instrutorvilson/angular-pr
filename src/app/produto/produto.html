@@ -1,5 +1,15 @@
 <p>Criar produto</p>
 <label>Informe nome</label>
-<input [(ngModel)]="descricao" 
+<input [(ngModel)]="produto.descricao" 
 type="text" placeholder="EX: milho" />
-<p>Seu produto: {{descricao}}</p>
+
+<label>Informe preço</label>
+<input [(ngModel)]="produto.preco" 
+type="text" placeholder="EX: 10.50" />
+
+<label>Informe estoque</label>
+<input [(ngModel)]="produto.estoque" 
+type="text" placeholder="EX: 10" />
+
+<p>Seu produto: {{'Nome: ' + produto.descricao + '\nR$' + produto
+    .preco + ' Unidades: ' + produto.estoque}}</p>
