@@ -1,0 +1,13 @@
+menu
+produto
+cliente
+carrinho
+
+ng generate component menu
+ng g c produto
+
+Criar um formulario para cadastrar produtos:
+-> descrição
+-> preço
+-> unidade de medida
+-> estoque

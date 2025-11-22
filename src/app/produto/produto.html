@@ -1,1 +1,34 @@
-<p>produto works!</p>
+<div class="container">
+    <h2 class="text-center">Criar produto</h2>
+<label>Informe nome</label>
+<input [(ngModel)]="produto.descricao" 
+type="text" 
+class="form-control"
+placeholder="EX: milho" />
+
+    <label class="mt-2">Informe preço</label>
+    <input [(ngModel)]="produto.preco" 
+    type="text" 
+    class="form-control"
+    placeholder="EX: 10.50" />
+
+    <label class="mt-2">Informe estoque</label>
+    <input [(ngModel)]="produto.estoque" 
+    type="text" 
+    class="form-control"
+    placeholder="EX: 10" />
+
+    <label class="mt-2">Selecione uma unidade de medida</label>
+    <select [(ngModel)]="produto.unMedida" class="form-select">
+        <option value="LT">litros</option>
+        <option value="KG">Kilos</option>
+        <option value="MT">metros</option>
+        <option value="UN">unidade</option>
+    </select> 
+    <div class="mt-3 d-flex justify-content-between">
+        <button (click)="salvar()" class="btn btn-primary">gravar</button>
+        <button class="btn btn-danger">cancelar</button>
+    </div>
+
+</div>
+y
