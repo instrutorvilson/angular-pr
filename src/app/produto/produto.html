@@ -30,5 +30,27 @@ placeholder="EX: milho" />
         <button class="btn btn-danger">cancelar</button>
     </div>
 
+    <hr/>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>UN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of produtos">
+                <td>{{p.id}}</td>
+                <td>{{p.descricao}}</td>
+                <td>{{p.preco}}</td>
+                <td>{{p.estoque}}</td>
+                <td>{{p.unMedida}}</td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 y
