@@ -9,9 +9,10 @@ export class ProdutoService {
   private produtos:IProduto[] = []
 
   salvar(produto:IProduto){
-     produto.id = this.produtos.length + 1
-     this.produtos.push(produto)
-     return produto 
+     const clone = {...produto} //spread
+     clone.id = this.produtos.length + 1
+     this.produtos.push(clone)
+     return clone 
   }
 
   getProdutos(){
