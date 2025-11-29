@@ -1,0 +1,30 @@
+<form #prod="ngForm" (ngSubmit)="salvar(prod)" class="m-3">
+
+    <label>Informe nome</label>
+    <input name="descricao" ngModel 
+    type="text" 
+    class="form-control"
+    placeholder="EX: milho" />
+
+    <label class="mt-2">Informe preço</label>
+    <input name="preco" ngModel 
+    type="text" 
+    class="form-control"
+    placeholder="EX: 10.50" />
+
+    <label class="mt-2">Informe estoque</label>
+    <input name="estoque"  ngModel 
+    type="text" 
+    class="form-control"
+    placeholder="EX: 10" />
+
+    <label class="mt-2">Selecione uma unidade de medida</label>
+    <select name="unMedida" class="form-select" ngModel >
+        <option value="LT">litros</option>
+        <option value="KG">Kilos</option>
+        <option value="MT">metros</option>
+        <option value="UN">unidade</option>
+    </select> 
+
+    <button class="btn btn-primary">Gravar</button>
+</form>

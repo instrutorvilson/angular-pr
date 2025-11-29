@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IProduto } from '../interfaces/IProduto';
 import { ProdutoService } from '../produto.service';
@@ -10,12 +10,16 @@ import { CommonModule } from '@angular/common';
   templateUrl: './produto.component.html',
   styleUrl: './produto.component.css'
 })
-export class ProdutoComponent {
+export class ProdutoComponent implements OnInit {
   produto:IProduto = {descricao:'',preco:0, unMedida: 'LT',estoque:0}
   
   produtos:any
   mensagem = ""
   constructor(private prod_service: ProdutoService){}
+  
+  ngOnInit(): void {
+    this.prod_service.getProdutos().subscribe(data => this.produtos = data)
+  }
 
   salvar():void{
     this.prod_service.salvar(this.produto).subscribe(response => this.mensagem = "Produto cadastrado com sucesso")
