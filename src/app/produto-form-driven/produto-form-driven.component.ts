@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IProduto } from '../interfaces/IProduto';
 import { CommonModule } from '@angular/common';
+import { ProdutoService } from '../produto.service';
 
 @Component({
   selector: 'app-produto-form-driven',
@@ -9,9 +10,12 @@ import { CommonModule } from '@angular/common';
   templateUrl: './produto-form-driven.component.html',
   styleUrl: './produto-form-driven.component.css'
 })
-export class ProdutoFormDrivenComponent {
+export class ProdutoFormDrivenComponent  {
+  mensagem:string = ''
 
+  constructor(private prod_service: ProdutoService){}
+  
   salvar(prod:any):void{
-      console.log(prod.value)
+      this.prod_service.salvar(prod.value).subscribe(() => this.mensagem = 'Produto inserido!')
   }
 }
