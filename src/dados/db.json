@@ -8,25 +8,67 @@
       "estoque": 10
     },
     {
-      "id": "6136",
+      "id": "1043",
+      "descricao": "trigo",
+      "preco": "12.50",
+      "estoque": "1",
+      "unMedida": "KG"
+    },
+    {
+      "id": "6ad2",
       "descricao": "",
-      "preco": 0,
-      "unMedida": "LT",
-      "estoque": 0
+      "preco": "",
+      "estoque": "",
+      "unMedida": ""
     },
     {
-      "id": "dedb",
-      "descricao": "feijão",
-      "preco": "10",
-      "unMedida": "LT",
-      "estoque": "2"
+      "id": "1eff",
+      "descricao": "",
+      "preco": "",
+      "estoque": "",
+      "unMedida": ""
     },
     {
-      "id": "5865",
-      "descricao": "d",
-      "preco": "1",
-      "unMedida": "LT",
-      "estoque": "1"
+      "id": "ea47",
+      "descricao": "",
+      "preco": "",
+      "estoque": "",
+      "unMedida": ""
+    },
+    {
+      "id": "4d17",
+      "descricao": "",
+      "preco": "",
+      "estoque": "",
+      "unMedida": ""
+    },
+    {
+      "id": "5c8e",
+      "descricao": "",
+      "preco": "",
+      "estoque": "",
+      "unMedida": "MT"
+    },
+    {
+      "id": "75f9",
+      "descricao": "trigo",
+      "preco": "12.50",
+      "estoque": "12",
+      "unMedida": "KG"
+    },
+    {
+      "id": "d15a",
+      "descricao": "trigo",
+      "preco": "12.50",
+      "estoque": "12",
+      "unMedida": "KG"
+    },
+    {
+      "id": "ac93",
+      "descricao": "soja",
+      "estoque": "30",
+      "preco": "123",
+      "unMedida": "KG"
     }
   ]
 }
